@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kredi Hesaplama</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+      
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Kredi Hesaplama</h2>
+        <span class="div-bar"></span>
+        <div class="calculator">
+            <div class="calculator-input">
+                <label for="">Kredi Miktarı:</label>
+                <input type="number" id="loan_amount">
+            </div>
+            <div class="calculator-input">
+                <label for="">Kredi Süresi:</label>
+                <input type="number" id="loan_tenure">
+        </div>
+        <div class="calculator-input">
+            <label for="">Faiz Oranı:</label>
+            <input type="number" id="loan_interest">
+    </div>
+    <div class="calculator-input">
+        <button class="calculator-btn">Hesapla</button>
+    </div>
+    </div>
+    <div class="calculator-result">
+        <!-- Canvas -->
+        <canvas id="loanChart"></canvas>
+        <ul>
+            <li>Aylık Kredi: <span class="loan_emi"></span></li>
+            <li>Anapara: <span class="loan_principle"></span></li>
+            <li>Kredi Faizi: <span class="loan_interest_rate"></span></li>
+            <li>Toplam miktar: <span class="loan_total"></span></li>
+        </ul>
+    </div>
+  
+    <script src="./db.js"></script>  
+</body>
+</html>
